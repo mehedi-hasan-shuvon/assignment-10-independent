@@ -7,8 +7,9 @@ import auth from '../../../firebase.init';
 import Loading from '../../Shared/Loading/Loading';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import './Login.css'
-import { ToastContainer, toast } from 'react-toastify';
+
 import 'react-toastify/dist/ReactToastify.css';
+import { toast, ToastContainer } from 'react-toastify';
 
 
 const Login = () => {
@@ -92,7 +93,7 @@ const Login = () => {
             <p>New To Genius Car? <span onClick={navigateRegister} className='text-danger register-please'>Please Register</span></p>
             <p>Forget Password? <span onClick={resetPassword} className='text-primary register-please'>Reset Password</span></p>
             <SocialLogin></SocialLogin>
-            <ToastContainer />
+            <ToastContainer></ToastContainer>
         </div>
     );
 };
