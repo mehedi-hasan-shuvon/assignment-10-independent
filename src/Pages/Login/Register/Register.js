@@ -5,6 +5,7 @@ import './Register.css';
 import auth from '../../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import Loading from '../../Shared/Loading/Loading';
+import { ToastContainer, toast } from 'react-toastify';
 // import auth from '../../../firebase.init';
 
 const Register = () => {
@@ -35,14 +36,14 @@ const Register = () => {
 
         await createUserWithEmailAndPassword(email, password);
         await updateProfile({ displayName: name });
-        alert('Updated profile');
+        toast('Updated profile');
         navigate('/home');
 
     }
     if (loading || updating) {
         return <Loading></Loading>
     }
-    
+
     if (user) {
         console.log("user found", user);
         // navigate('/home');
@@ -50,7 +51,7 @@ const Register = () => {
 
     return (
         <div className='register-form'>
-            <h2 style={{ textAlign: 'center' }}>Please Register</h2>
+            <h2 className='register-header text-primary py-2' style={{ textAlign: 'center' }}>Please Register</h2>
             <form onSubmit={handleRegister}>
                 <input type="text" name="name" id="" placeholder='Your Name' />
 
@@ -61,11 +62,12 @@ const Register = () => {
                 <label className={agree ? ' ps-2 text-primary' : 'ps-2 text-danger'} htmlFor="terms"> Accepts Terms and Conditions</label>
                 <input
                     disabled={!agree}
-                    className=' btn btn-primary w-50 mx-auto mt-2'
+                    className=' btn btn-primary w-50 mx-auto mt-2 register-button'
                     type="submit" value="Register" />
             </form>
             <p>Already have an account? <Link to="/login" className='text-primary pe-auto text-decoration-none' onClick={navigateLogin}>Please Login</Link> </p>
             <SocialLogin></SocialLogin>
+            <ToastContainer />
         </div>
     );
 };

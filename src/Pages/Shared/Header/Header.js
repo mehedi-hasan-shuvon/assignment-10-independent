@@ -35,6 +35,7 @@ const Header = () => {
                                         Login
                                     </Nav.Link>}
                         </Nav>
+                        <p className='mt-3 text-white'>{user?.displayName}</p>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
