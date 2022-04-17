@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Carousel } from 'react-bootstrap';
 import './Banner.css';
-import banner1 from '../../../Images/banner/bannar-1.png'
+import banner1 from '../../../Images/banner/banner-1.png'
 import banner2 from '../../../Images/banner/banner-2.png'
 import banner3 from '../../../Images/banner/banner-3.png'
 

@@ -72,28 +72,30 @@ const Login = () => {
     }
 
     return (
-        <div className='container w-50 mx-auto login-form'>
-            <h2 className='text-primary text-center my-3'>Please Login</h2>
-            <Form onSubmit={handelSubmit}>
-                <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Control ref={emailRef} type="email" placeholder="Enter email" required />
+        <div className='login-page'>
+            <div className='container w-50 mx-auto login-form'>
+                <h2 className='text-primary text-center my-3'>Please Login</h2>
+                <Form onSubmit={handelSubmit}>
+                    <Form.Group className="mb-3" controlId="formBasicEmail">
+                        <Form.Control ref={emailRef} type="email" placeholder="Enter email" required />
 
-                </Form.Group>
+                    </Form.Group>
 
-                <Form.Group className="mb-3" controlId="formBasicPassword">
+                    <Form.Group className="mb-3" controlId="formBasicPassword">
 
-                    <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
-                </Form.Group>
+                        <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
+                    </Form.Group>
 
-                <Button variant="primary w-50 mx-auto d-block mb-2" type="submit">
-                    Login
-                </Button>
-            </Form>
-            {errorElement}
-            <p>New To Genius Car? <span onClick={navigateRegister} className='text-danger register-please'>Please Register</span></p>
-            <p>Forget Password? <span onClick={resetPassword} className='text-primary register-please'>Reset Password</span></p>
-            <SocialLogin></SocialLogin>
-            <ToastContainer></ToastContainer>
+                    <Button variant="primary w-50 mx-auto d-block mb-2" type="submit">
+                        Login
+                    </Button>
+                </Form>
+                {errorElement}
+                <p>New To Genius Car? <span onClick={navigateRegister} className='text-danger register-please'>Please Register</span></p>
+                <p>Forget Password? <span onClick={resetPassword} className='text-primary register-please'>Reset Password</span></p>
+                <SocialLogin></SocialLogin>
+                <ToastContainer></ToastContainer>
+            </div>
         </div>
     );
 };
