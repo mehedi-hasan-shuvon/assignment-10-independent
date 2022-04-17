@@ -14,7 +14,7 @@ const About = () => {
                 <h1>Mehedi Hasan Shuvon</h1>
             </div>
             <h2 className='text-center'>Recently graduated from Brac University in Computer Science Engineering (CSE) Department.I have worked as student tutor at Brac University in Data Structure and Algorithm Course for over 1 year. Currently I am a Trainee at BJET. Also learning MERN web Development from Programming Hero</h2>
-
+            
         </div>
     );
 };
