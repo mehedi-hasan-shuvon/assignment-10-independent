@@ -32,7 +32,7 @@ const Chcekout = () => {
 
     return (
         <div>
-            <h1 className='text-center p-2'>Checking out Item no {serviceId}</h1>
+            <h1 className='text-center p-2 chekout-header'>Checking out Item no {serviceId}</h1>
             {
                 location?.state?.id ?
                     <div className='container text-center'>

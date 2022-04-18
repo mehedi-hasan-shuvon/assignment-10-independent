@@ -35,3 +35,11 @@
 .register-page{
     min-height: 76vh;
 }
+
+
+@media only screen and (max-width:576px) {
+    .register-form {
+        width: 80% !important;
+    }
+
+}

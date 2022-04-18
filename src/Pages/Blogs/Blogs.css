@@ -1,3 +1,8 @@
-.question-img{
+.question-img {
     width: 30%;
+}
+
+.question-answer-header {
+    font-weight: 800;
+    color: #363062;
 }

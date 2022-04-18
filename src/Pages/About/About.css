@@ -45,5 +45,10 @@
 
 .bg {
     background-color: #E9D5DA;
-    min-height:  86vh;
+    min-height: 86vh;
+}
+
+.about-header {
+    font-weight: 800;
+    color: #363062;
 }
