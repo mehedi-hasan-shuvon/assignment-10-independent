@@ -14,7 +14,7 @@ const Home = () => {
                     </div>
 
                 </div>
-                <div className='col-md-6 mx-auto py-3'>
+                <div className='col-md-6 mx-auto py-4 px-5'>
                     <Banner></Banner>
                 </div>
             </div>

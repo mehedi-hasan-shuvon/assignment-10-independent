@@ -16,40 +16,35 @@ const Banner = () => {
         <Carousel activeIndex={index} onSelect={handleSelect} >
             <Carousel.Item>
                 <img
-                    className="d-block w-75"
+                    className="d-block w-100"
                     src={banner1}
                     alt="First slide"
                 />
                 <Carousel.Caption>
-                    <h3 className='text-primary'>2 Years Work Experience</h3>
-                    <p className='text-primary'>Student Tutor of Brac University</p>
+                  
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img
 
-                    className="d-block w-75"
+                    className="d-block w-100"
                     src={banner2}
                     alt="Second slide"
                 />
 
                 <Carousel.Caption>
-                    <h3 className='text-primary'>Online Class based</h3>
-                    <p className='text-primary'>No need of Physical Class</p>
+                 
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img
-                    className="d-block w-75"
+                    className="d-block w-100"
                     src={banner3}
                     alt="Third slide"
                 />
 
                 <Carousel.Caption>
-                    <h3 className='text-primary'>Taught in Group</h3>
-                    <p className='text-primary'>
-                        Can be taught privatly or in a group.
-                    </p>
+                    
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
